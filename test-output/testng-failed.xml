@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="eto" value="9"/>
+    <parameter name="ito" value="9"/>
+    <parameter name="grid" value="no"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="gridurl" value="https://oauth-rmanju765-f5339:d3b01e77-0b40-4ab2-b2ce-76f5211366df@ondemand.eu-central-1.saucelabs.com:443/wd/hub"/>
+    <parameter name="appurl" value="https://demo.actitime.com/"/>
     <classes>
       <class name="script.DemoTest2">
         <methods>
@@ -11,5 +17,5 @@
         </methods>
       </class> <!-- script.DemoTest2 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
